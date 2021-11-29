@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\reset.css">
+    <link rel="stylesheet" href="css\style.css">
+    <title>Project Oracle</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__description">
+                    <p class="header__text">
+                        Не знаешь как назвать видео? Хочешь, чтобы <br> оно было популярным?
+                    </p>
+                    <h1 class="header__title">Мы поможем тебе определиться!</h1>
+                </div>
+                <div class="header__content">
+                    <form class="header__form">
+                        <div class="header__form-content">
+                            <label class="header__form-label">
+                                Как ты хочешь назвать видео?
+                                <input class="header__form-input" type="text" id="" name="" required>
+                            </label>
+                        </div>
+                        <div class="header__form-moreinfo__content">
+                            <p class="header__form-moreinfo">
+                                Дополнительно
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                <span>рекомендуется заполнить</span>
+                            </p>
+                            <div class="header__form-moreinfo__content-box">
+                                <label class="moreinfo__label">
+                                    Как называется канал?
+                                    <input class="moreinfo__input" type="text" id="" name="">
+                                </label>
+                                <label class="moreinfo__label">
+                                    Какое описание видео?
+                                    <input class="moreinfo__input" type="text" id="" name="">
+                                </label>
+                                <label class="moreinfo__label">
+                                    К каким тегам относится видео?
+                                    <input class="moreinfo__input" type="text" id="" name="">
+                                </label>
+                                <label class="moreinfo__label moreinfo__label-checkbox">
+                                    Отключить комментарии
+                                    <input class="moreinfo__input moreinfo__input-checkbox" type="checkbox">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="header__form-bottomcontent">
+                            <label class="header__form-bottomcontent__label">
+                                <div class="toltip__box">Среднее количество просмотров:
+                                    <div class="tooltip">
+                                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                        <p class="tooltip-text">
+                                            Среднее количество просмотров, которое бывает на твоём канале. Если же ты
+                                            ещё только
+                                            начинаешь свой путь или не знаешь это число, оставь поле пустым, мы
+                                            посчитаем сами.
+                                        </p>
+                                    </div>
+                                </div>
+                                <input class="header__form-bottomcontent__input" type="text"
+                                    placeholder="50 000, если поле пустое">
+                            </label>
+                            <button class="header__form-btn" type="button" type="submit">анализировать</button>
+                            <div class="modal">
+                                <div class="modal-question">
+                                    <p class="modal-question__text">
+                                        Если вы закроете форму данные будут потеряны, вы уверенны что хотите продолжить?
+                                    </p>
+                                    <button class="modal-question__btn modal-question__yes" type="button">Ок</button>
+                                    <button class="modal-question__btn modal-question__no" type="button">Отмена</button>
+                                </div>
+                                <div class="modal-content">
+                                    <h6 class="modal__title">Результат</h6>
+                                    <button class="close__modal" type="button">
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </button>
+                                    <div class="modal-content__box">
+                                        <ul class="modal__list">
+                                            <li class="modal__item">Количество просмотров:</li>
+                                            <li class="modal__item">Число</li>
+                                            <li class="modal__item">%</li>
+                                        </ul>
+                                        <ul class="modal__list">
+                                            <li class="modal__item">Количество лайков:</li>
+                                            <li class="modal__item">Число</li>
+                                            <li class="modal__item">%</li>
+                                        </ul>
+                                        <ul class="modal__list">
+                                            <li class="modal__item">Количество дислайков:</li>
+                                            <li class="modal__item">Число</li>
+                                            <li class="modal__item">%</li>
+                                        </ul>
+                                    </div>
+                                    <p class="modal__conclusion">Описание результата анализа</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <script src="https://use.fontawesome.com/a3b08b5393.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

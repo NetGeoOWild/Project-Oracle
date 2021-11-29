@@ -28,7 +28,7 @@
                         <div class="header__form-content">
                             <label class="header__form-label">
                                 Как ты хочешь назвать видео?
-                                <textarea class="header__form-input" type="text"></textarea>
+                                <input class="header__form-input" type="text" id="title" name="title" required>
                             </label>
                         </div>
                         <div class="header__form-moreinfo__content">
@@ -40,19 +40,19 @@
                             <div class="header__form-moreinfo__content-box">
                                 <label class="moreinfo__label">
                                     Как называется канал?
-                                    <textarea class="moreinfo__input" type="text"></textarea>
+                                    <input class="moreinfo__input" type="text" id="channel_title" name="channel_title">
                                 </label>
                                 <label class="moreinfo__label">
                                     Какое описание видео?
-                                    <textarea class="moreinfo__input" type="text"></textarea>
+                                    <input class="moreinfo__input" type="text" id="tags" name="tags">
                                 </label>
                                 <label class="moreinfo__label">
                                     К каким тегам относится видео?
-                                    <textarea class="moreinfo__input" type="text"></textarea>
+                                    <input class="moreinfo__input" type="text" id="description" name="description">
                                 </label>
                                 <label class="moreinfo__label moreinfo__label-checkbox">
                                     Отключить комментарии
-                                    <input class="moreinfo__input moreinfo__input-checkbox" type="checkbox">
+                                    <input class="moreinfo__input moreinfo__input-checkbox" type="checkbox" id="comments_disabled" name="comments_disabled">
                                 </label>
                             </div>
                         </div>
@@ -69,44 +69,10 @@
                                         </p>
                                     </div>
                                 </div>
-                                <textarea class="header__form-bottomcontent__input" type="text"
-                                    placeholder="50 000, если поле пустое"></textarea>
+                                <input class="header__form-bottomcontent__input" type="text"
+                                    placeholder="50 000, если поле пустое" id="views" name="views">
                             </label>
                             <button class="header__form-btn" type="button" type="submit">анализировать</button>
-                            <div class="modal">
-                                <div class="modal-question">
-                                    <p class="modal-question__text">
-                                        Если вы закроете форму данные будут потеряны, вы уверенны что хотите продолжить?
-                                    </p>
-                                    <button class="modal-question__btn modal-question__yes" type="button">Ок</button>
-                                    <button class="modal-question__btn modal-question__no" type="button">Отмена</button>
-                                </div>
-                                <div class="modal-content">
-                                    <h6 class="modal__title">Результат</h6>
-                                    <button class="close__modal">
-                                        <span></span>
-                                        <span></span>
-                                    </button>
-                                    <div class="modal-content__box">
-                                        <ul class="modal__list">
-                                            <li class="modal__item">Количество просмотров:</li>
-                                            <li class="modal__item">Число</li>
-                                            <li class="modal__item">%</li>
-                                        </ul>
-                                        <ul class="modal__list">
-                                            <li class="modal__item">Количество лайков:</li>
-                                            <li class="modal__item">Число</li>
-                                            <li class="modal__item">%</li>
-                                        </ul>
-                                        <ul class="modal__list">
-                                            <li class="modal__item">Количество дислайков:</li>
-                                            <li class="modal__item">Число</li>
-                                            <li class="modal__item">%</li>
-                                        </ul>
-                                    </div>
-                                    <p class="modal__conclusion">Описание результата анализа</p>
-                                </div>
-                            </div>
                         </div>
                     </form>
                 </div>
